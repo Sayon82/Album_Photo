@@ -1,0 +1,90 @@
+
+
+
+.container {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),;
+	background-size: cover;
+	background-position: center;
+	padding: 0 8%;
+}
+
+
+
+.site-container {
+	position: absolute;
+	bottom: 10%;
+	color: #060c51;
+  
+}
+
+p {
+	font-size: 50px;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 140px;
+	line-height: 120px;
+	margin-left: -10px;
+	color: transparent;
+	-webkit-text-stroke: 1px #f2aa1b;
+    background-image: url(https://cache.cosmopolitan.fr/data/photo/w1200_h630_ci/6h/parfums-floraux1.jpg);
+   
+	
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-position: 0 0;
+	animation: animate 20s linear 2s infinite alternate;
+}
+
+@keyframes animate {
+	100% {
+		background-position: -500px 0;
+	}
+}
+
+.site-container h3 {
+	font-size: 40px;
+	font-weight: 500;
+}
+
+.site-container .row {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+
+.row a {
+	display: flex;
+	align-items: center;
+	padding: 5px 20px;
+	text-decoration: none;
+	border: 1px solid #0b0354;
+    color: #ffffff;
+	margin-right: 40px;
+	font-size: 18px;
+	transition: 0.3s;
+    background-color: #0b0354;
+}
+
+
+.row a:hover {
+	background-color: #d61baa;
+	color: #ffffff;
+}
+
+.row a span {
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 2;
+	margin-left: 10px;
+}
+
+.row span {
+	font-size: 18px;
+}
+

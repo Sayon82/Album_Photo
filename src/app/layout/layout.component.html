@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+
+<nav class="navbar navbar-inverse" style="background: #120352;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" >DAME DE LUXE</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a routerLink="/acceuil"   style="background-color: #0a0133;">Acceuil</a></li>
+     
+      <li class="active"><a routerLink="/actualite" style="background: #0a0133;" >Actualité</a></li>
+
+      <li class="active"><a routerLink="/album" style="background: #0a0133;" >Album</a></li>
+
+      <li class="active"><a routerLink="/contact" style="background: #0a0133;" >Contact</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active" ><a routerLink="/inscription" style="background:#120352;" ><span class="glyphicon glyphicon-user"></span> Inscription</a></li>
+      <li class="active" ><a routerLink="/connexion" style="background: #120352;" ><span class="glyphicon glyphicon-log-in"></span> Connexion</a></li>
+    </ul>
+  </div>
+  
+</nav>
+
+  
+<div class="container-fluid">
+  <ng-content></ng-content>
+</div>
+
+
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-info">
+            <h3>2<span>DL</span></h3>
+            <p>
+              Mali, Bamako<br>
+              Torokorobougou<br><br>
+              <strong>Phone:</strong> +223 826-495-00<br>
+              <strong>Email:</strong> 2dl@gmail.com<br>
+            </p>
+           
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Nos Services</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Conseils personnalisés</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">2chantillons gratuits</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Programme de fidélité</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Préstaion de service</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Liens rapide</h4>
+          <ul>
+            <li class="active"><i class="bx bx-chevron-right"></i> <a routerLink="/acceuil">Acceuil</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Actualité</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Album</a></li>
+            <li class="active"><i class="bx bx-chevron-right"></i> <a routerLink="/contact">Contact</a></li>
+          </ul>
+         
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-newsletter">
+          <h4>Contactez-nous</h4>
+          <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+          <a href="mailto:sayon82649500@gmail.Com" id="bouton" >E-mail</a>
+          <a href="https://wa.me/+22382649500" id="bouton" >WhatsApp</a>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Sayon</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      Designed by <a href="https://bootstrapmade.com/">Traore Sayon</a>
+    </div>
+  </div>
+</footer><!-- End Footer -->
+</body>
+</html>
+
+
+

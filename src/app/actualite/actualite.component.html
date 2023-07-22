@@ -1,0 +1,41 @@
+<app-layout>
+
+    <h1>Actualité</h1>
+
+    <div class="panel panel-default">
+        <div class="panel-heading" style="height: 30px; padding: 5px" >
+          <h4 class="panel-title">
+            <a class="accordion-toggle" role="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" style="font-size: 20px; padding: 0 20px" aria-controls="collapse4">
+      Juste pour vous </a>
+          </h4>
+         
+        </div>
+        <div id="collapse4" class="panel-collapse collapse in" >
+          <h1 style="text-align: center; color: #0a0133;" >Bienvenue sur la page d'actualité de 2<span style="color: rgb(255, 204, 0);" >DL!</span></h1><br><br>
+          <div class="row" >
+    
+            <div class="col-sm-3" *ngFor="let d of data" >
+              <div class="card">
+                <div class="card-body" style="color: rgb(0, 0, 0); margin-left:5%;">
+                  <h5 class="card-title" >{{d.title}}</h5>
+                  <p class="card-text" style="text-align:justify;"> {{d.body}} </p>
+                 
+                  <div class="footer">
+                    <a class="btn btn-primary" routerLink="/voir/{{d.id}}" >Voir</a>&nbsp;
+                  <a href="#" class="btn btn-warning" >Modiffier</a>&nbsp;
+                  <a href="#" class="btn btn-danger" >Supprimer</a>&nbsp;
+                  </div>
+                
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+
+      
+      
+  
+   </app-layout>

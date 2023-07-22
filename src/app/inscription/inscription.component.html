@@ -1,0 +1,31 @@
+<app-layout>
+    <h1>Inscription</h1>
+
+    <form action="action_page.php" style="border:1px solid #ccc">
+        <div class="container">
+          <h1>Inscription</h1>
+          <p>Veuillez s'il vous plait remplir ce formulaire pour créer votre compte.</p>
+          <hr>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Entez votrez email" name="email" required>
+      
+          <label for="psw"><b>Mot de passe</b></label>
+          <input type="password" placeholder="Entez votre mot de passe" name="psw" required>
+      
+          <label for="psw-repeat"><b>Nouveau mot de passe</b></label>
+          <input type="password" placeholder="Nouveau mot de passe" name="psw-repeat" required>
+      
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Souvener de moi
+          </label>
+      
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      
+          <div class="clearfix">
+            <button type="button" class="cancelbtn">Annuler</button>
+            <button type="submit" class="signupbtn">Inscrie</button>
+          </div>
+        </div>
+      </form>
+</app-layout>
